@@ -1,0 +1,146 @@
+.header {
+    padding: 2.5rem 0.5rem 2rem 0.5rem;
+}
+
+.ALWfo {
+    display: flex;
+    flex-direction: row;
+    height: 176px;
+    width: 100%;
+    overflow-x: auto;
+    background: rgb(255, 255, 255);
+}
+
+.kXXQUh {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.iYxMJl {
+    width: 20px;
+    height: 3px;
+    background-color: rgb(255, 109, 42);
+    will-change: transform;
+    border-radius: 4px;
+}
+
+.gkfGpY {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.recommend-container {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    place-content: flex-start space-between;
+    flex-shrink: 0;
+    overflow: hidden;
+    -webkit-box-pack: justify;
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 7.200000000000001px;
+    background: #f2f2f2;
+    padding-bottom: 11.52px;
+}
+
+.gkfGpY .recommend-container {
+    width: 100%;
+}
+
+Style Attribute {
+    font-size: 16px;
+}
+
+.recommend-payed {
+    font-size: 10.559999999999999px;
+    color: #999999;
+    margin-top: 1.92px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.recommend-title {
+    margin-top: 11.04px;
+    width: 90%;
+    height: 35.519999999999996px;
+    position: relative;
+    overflow: hidden;
+    line-height: 17.759999999999998px;
+    text-overflow: ellipsis;
+    min-height: 0;
+}
+
+.recommend-price-box{
+  float: left;
+}
+
+.recommend-title-p {
+    width: 86.25px;
+    height: 35.52px;
+    font-size: 12.48px;
+    margin-top: 11.04px;
+    height: 35.519999999999996px;
+    color: #333333;
+}
+
+.recommend-price {
+    font-size: 13.440000000000001px;
+    line-height: 15.36px;
+    color: #ff5500;
+}
+
+.recommend-h {
+    color: #ff5500;
+}
+
+.recommend-img {
+    width: 164.16px;
+    height: 164.16px;
+}
+
+.recommend-hd {
+    padding: 11.52px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.recommend-hd-bg {
+    margin-left: 75px;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+.recommend-info {
+    padding-left: 9.6px;
+    padding-right: 8.639999999999999px;
+    height: 90.24000000000001px;
+    text-decoration: none;
+}
+
+span{
+        overflow: hidden;
+
+    }

@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" type="text/css" href="./css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="./home.css">
+    <link rel="stylesheet" type="text/css" href="./css/aui-slide.css" />
+    <script type="text/javascript" src="./script/api.js"></script>
+    <script type="text/javascript" src="./script/aui-slide.js"></script>
+
+    <script>
+        function GoToUrl() {
+            if (parent != null && parent.showPage != null) {
+                parent.showPage(1, "view.html");
+            }
+            else {
+                // 不存在框架转入则直接转入
+                opennewwin("view.html", 700, 600);
+            } // end if
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 搜索栏 -->
+    <div class="aui-searchbar" id="search" style="background-color: rgb(255, 133, 42);
+    ;">
+        <div class="aui-searchbar-input aui-border-radius" tapmode onclick="doSearch()">
+            <i class="aui-iconfont aui-icon-search"></i>
+            <form action="javascript:search();">
+                <input type="search" placeholder="请输入搜索内容" id="search-input">
+            </form>
+        </div>
+        <div style="color: black;" class="aui-searchbar-cancel" tapmod>取消</div>
+    </div>
+    <!-- 导航菜单栏 -->
+    <div class="aui-tab" id="tab">
+        <div class="aui-tab-item aui-active">首页</div>
+        <div class="aui-tab-item">
+            <div></div>生鲜
+        </div>
+        <div class="aui-tab-item">企业</div>
+        <div class="aui-tab-item">医药</div>
+        <div class="aui-tab-item">百货</div>
+        <div class="aui-col-xs-3">
+            <i class="aui-iconfont aui-icon-menu"></i>
+            <p>menu</p>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+     <div id="aui-slide3">
+            <div class="aui-slide-node bg-dark">
+                <img src="./photo/lunbo/u=1534422690,1120432942&fm=26&gp=0.jpg" />
+            </div>
+            <!-- <div class="aui-slide-node bg-dark">
+                <img src="./photo/lunbo/u=234729762,3849440195&fm=26&gp=0.jpg" />
+            </div>
+            <div class="aui-slide-node bg-dark">
+                <img src="./photo/lunbo/u=2763523135,381182796&fm=26&gp=0.jpg" />
+            </div> -->
+    </div>
+    <!-- 入口 -->
+
+    <div class="ALWfo">
+        <div class="sc-ifAKCX iLINIY"><a class="sc-EHOje jXFKFG" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB1OIxTcLc3T1VjSZLeXXbZsVXa-183-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">天猫新品</p>
+            </a><a class="sc-EHOje hrPgER" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB1llI3f4n1gK0jSZKPXXXvUXXa-183-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">充值中心</p>
+            </a></div>
+        <div class="sc-ifAKCX iLINIY"><a class="sc-EHOje jXFKFG" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://img.alicdn.com/tfs/TB11yZ8weL2gK0jSZPhXXahvXXa-183-144.png">
+                <p class="sc-gzVnrw hKaypx">今日爆款</p>
+            </a><a class="sc-EHOje hrPgER" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB1O_AyVwHqK1RjSZFPXXcwapXa-183-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">机票酒店</p>
+            </a></div>
+        <div class="sc-ifAKCX iLINIY"><a class="sc-EHOje jXFKFG" href=""><img class=" sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">天猫国际</p>
+            </a><a class="sc-EHOje hrPgER" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB19yZJVBLoK1RjSZFuXXXn0XXa-183-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">金币庄园</p>
+            </a></div>
+        <div class="sc-ifAKCX iLINIY"><a class="sc-EHOje jXFKFG" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB1DaMyVpzqK1RjSZFoXXbfcXXa-185-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">饿了么</p>
+            </a><a class="sc-EHOje hrPgER" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB16ZYDk4n1gK0jSZKPXXXvUXXa-183-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">阿里拍卖</p>
+            </a></div>
+        <div class="sc-ifAKCX iLINIY"><a class="sc-EHOje jXFKFG" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB1FucwVwHqK1RjSZFgXXa7JXXa-183-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">天猫超市</p>
+            </a><a class="sc-EHOje hrPgER" href=""><img class="sc-bZQynM iEnsRn"
+                    src="https://gw.alicdn.com/tfs/TB19dcwVyrpK1RjSZFhXXXSdXXa-183-144.png?getAvatar=1">
+                <p class="sc-gzVnrw hKaypx">淘宝吃货</p>
+            </a></div>
+    </div>
+    <!-- 页面条 -->
+    <div class="kXXQUh">
+        <div class="dNdKAo">
+            <div class="iYxMJl"></div>
+        </div>
+    </div>
+    </div>
+    <!-- 猜你喜欢 -->
+    <div class="recommend-container" data-spm="recommend">
+        <div class="recommend-hd"><img src="https://img.alicdn.com/tfs/TB1V2eQrKSSBuNjy0FlXXbBpVXa-966-114.png"
+                class="recommend-hd-bg">
+        </div>
+        <section class="aui-grid aui-margin-b-15">
+            <div class="aui-row">
+                <div class="aui-col-xs-6">
+                    <div class="recommend-item"><a class="recommend-img-wrapper" data-index="0">
+                            <img class="recommend-img lazyload" src="./photo/cai/one.webp">
+                        </a>
+                        <a class="recommend-info" data-index="0">
+                            <div class="recommend-title">
+                                <span class="recommend-title-p">日式简约纯色天竺棉四件套 纯棉床单被套床笠四件套1.5/1.8m床</span>
+                            </div>
+                            <div class="recommend-price-box">
+                                <span class="recommend-sign recommend-h">￥</span>
+                                <span class="recommend-price">218</span>
+                                <span class="recommend-payed">19人已购买</span>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="aui-col-xs-6">
+                    <div class="recommend-item"><a class="recommend-img-wrapper" data-index="1">
+                            <img class="recommend-img lazyload" src="./photo/cai/two.webp">
+                        </a>
+                        <a class="recommend-info" data-index="1">
+                            <div class="recommend-title">
+                                <span class="recommend-title-p">简约现代沙发边柜储物柜客厅小茶几角几边桌美式床头柜小实木边几</span>
+                            </div>
+                            <div class="recommend-price-box">
+                                <span class="recommend-sign recommend-h">￥</span>
+                                <span class="recommend-price">388</span>
+                                <span class="recommend-payed">9人已购买</span>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="aui-col-xs-6">
+                    <div class="recommend-item"><a class="recommend-img-wrapper" data-index="2">
+                            <img class="recommend-img lazyload" src="./photo/cai/three.webp">
+                        </a>
+                        <a class="recommend-info" data-index="2">
+                            <div class="recommend-title">
+                                <span class="recommend-title-p">九间房免漆老榆木墙面置物架茶家具禅意多宝格墙上组合瓷器方格架</span>
+                            </div>
+                            <div class="recommend-price-box">
+                                <span class="recommend-sign recommend-h">￥</span>
+                                <span class="recommend-price">650</span>
+                                <span class="recommend-payed">71人已购买</span>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="aui-col-xs-6">
+                    <div clas="recommend-item"><a class="recommend-img-wrapper" data-index="3">
+                            <img class="recommend-img" src="./photo/cai/four.webp">
+                        </a>
+                        <a class="recommend-info" data-index="3">
+                            <div class="recommend-title">
+                                <span class="recommend-title-p">日本进口yumiko iihoshi作家款unjour一日系列点心盘早餐圆形餐盘</span>
+                            </div>
+                            <div class="recommend-price-box">
+                                <span class="recommend-sign recommend-h">￥</span>
+                                <span class="recommend-price">168</span>
+                                <span class="recommend-payed">188人已购买</span>
+                            </div>
+                        </a></div>
+                </div>
+
+            </div>
+        </section>
+</body>
+<footer class="aui-bar aui-bar-tab" id="footer">
+    <div class="aui-bar-tab-item aui-active" tapmode>
+        <i class="aui-iconfont aui-icon-home"></i>
+        <div class="aui-bar-tab-label" onclick="window.open('./home.html','_self')">首页</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+        <i class="aui-iconfont aui-icon-star"></i>
+        <div class="aui-bar-tab-label" onclick="window.open('./user.html','_self')">消息</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+        <div class="aui-badge">99</div>
+        <i class="aui-iconfont aui-icon-cart"></i>
+        <div class="aui-bar-tab-label" onclick="window.open('./user.html','_self')">购物车</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+        <div class="aui-dot"></div>
+        <i class="aui-iconfont aui-icon-my"></i>
+        <div class="aui-bar-tab-label" onclick="window.open('./user.html','_self')">我的淘宝</div>
+    </div>
+</footer>
+
+</html>
